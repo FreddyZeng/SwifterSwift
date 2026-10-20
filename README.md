@@ -2,27 +2,28 @@
   <img src="https://cdn.rawgit.com/SwifterSwift/SwifterSwift/master/Assets/logo.svg" title="swifterSwift">
 </p>
 
-[![Build Status](https://github.com/SwifterSwift/SwifterSwift/workflows/SwifterSwift/badge.svg?branch=master)](https://github.com/SwifterSwift/SwifterSwift/actions)
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)](https://github.com/SwifterSwift/swifterSwift)
+[![Build Status](https://github.com/SwifterSwift/SwifterSwift/actions/workflows/CI.yml/badge.svg)](https://github.com/SwifterSwift/SwifterSwift/actions/workflows/CI.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FSwifterSwift%2FSwifterSwift%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/SwifterSwift/SwifterSwift)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FSwifterSwift%2FSwifterSwift%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/SwifterSwift/SwifterSwift)
 [![Cocoapods](https://img.shields.io/cocoapods/v/SwifterSwift.svg)](https://cocoapods.org/pods/SwifterSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 [![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![codecov](https://codecov.io/gh/SwifterSwift/SwifterSwift/branch/master/graph/badge.svg)](https://codecov.io/gh/SwifterSwift/SwifterSwift)
-[![docs](http://swifterswift.com/docs/badge.svg)](http://swifterswift.com/docs)
-[![Swift](https://img.shields.io/badge/Swift-5.3-orange.svg)](https://swift.org)
-[![Xcode](https://img.shields.io/badge/Xcode-12.4-blue.svg)](https://developer.apple.com/xcode)
+[![Xcode](https://img.shields.io/badge/Xcode-26.0.1-blue.svg)](https://developer.apple.com/xcode)
 [![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Slack Channel](https://img.shields.io/badge/Slack-SwifterSwift-green.svg)](https://join.slack.com/t/swifterswift/shared_invite/zt-s6dl4g2e-R5V5baIawGpdUz2heShjiQ)
 
-SwifterSwift is a collection of **over 500 native Swift extensions**, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS, watchOS and Linux.
+SwifterSwift is a collection of **over 500 native Swift extensions**, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS, watchOS, Linux, and Android.
 
-### [Whats New in v5.3?](https://github.com/SwifterSwift/SwifterSwift/blob/master/CHANGELOG.md#v530)
+[简体中文](README_CN.md)
+
+### [Whats New in v6.0?](https://github.com/SwifterSwift/SwifterSwift/blob/master/CHANGELOG.md#v600)
 
 ## Requirements
 
-- **iOS** 10.0+ / **tvOS** 9.0+ / **watchOS** 2.0+ / **macOS** 10.10+ / **Ubuntu** 14.04+
-- Swift 5.0+
+- **iOS** 15.0+ / **tvOS** 12.0+ / **watchOS** 9.0+ / **macOS** 12.0+ / **visionOS** 1.0+ / **Mac Catalyst** 15.0+ / **Ubuntu** 14.04+
+- Swift 6.0+
 
 ## Looking to use SwifterSwift for older versions of Swift
 
@@ -62,6 +63,9 @@ SwifterSwift is Swift v5.0+ compatible starting from v5
 <h4>- Integrate CoreLocation extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'SwifterSwift/CoreLocation'</code></pre>
 
+<h4>- Integrate CryptoKit extensions only:</h4>
+<pre><code class="ruby language-ruby">pod 'SwifterSwift/CryptoKit'</code></pre>
+
 <h4>- Integrate SpriteKit extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'SwifterSwift/SpriteKit'</code></pre>
 
@@ -86,7 +90,7 @@ SwifterSwift is Swift v5.0+ compatible starting from v5
 </br>
 <p>To integrate SwifterSwift into your Xcode project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
 
-<pre><code class="ogdl language-ogdl">github "SwifterSwift/SwifterSwift" ~&gt; 5.3
+<pre><code class="ogdl language-ogdl">github "SwifterSwift/SwifterSwift" ~&gt; 6.0
 </code></pre>
 </details>
 
@@ -101,7 +105,7 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.3.0")
+        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "6.0.0")
     ]
 )
 </code></pre>
@@ -145,6 +149,8 @@ let package = Package(
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/CharacterExtensions.swift"><code>Character extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/CollectionExtensions.swift"><code>Collection extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/ComparableExtensions.swift"><code>Comparable extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/DecodableExtensions.swift"><code>DecodableExtensions extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/DefaultStringInterpolationExtensions.swift"><code>DefaultStringInterpolationExtensions extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/DictionaryExtensions.swift"><code>Dictionary extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/DoubleExtensions.swift"><code>Double extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/SwiftStdlib/FloatExtensions.swift"><code>Float extensions</code></a></li>
@@ -170,6 +176,7 @@ let package = Package(
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/DateExtensions.swift"><code>Date extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/SwifterSwift/Foundation/FileManagerExtensions.swift"><code>FileManager extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/LocaleExtensions.swift"><code>Locale extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/MeasurementExtensions.swift"><code>Measurement extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/NSAttributedStringExtensions.swift"><code>NSAttributedString extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/NSPredicateExtensions.swift"><code>NSPredicate extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/URLExtensions.swift"><code>URL extensions</code></a></li>
@@ -224,9 +231,10 @@ let package = Package(
 <summary>AppKit Extensions</summary>
 </br>
 <ul>
-<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Shared/ColorExtensions.swift"><code>NSColor extensions</code></a></li>
-<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSViewExtensions.swift"><code>NSView extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Shared/NSColorExtensions.swift"><code>NSColor extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSImageExtensions.swift"><code>NSImage extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSStackViewExtensions.swift"><code>NSStackView extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSViewExtensions.swift"><code>NSView extensions</code></a></li>
 </ul>
 </details>
 
@@ -257,6 +265,14 @@ let package = Package(
 </br>
 <ul>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/CoreAnimation/CAGradientLayerExtensions.swift"><code>CAGradientLayer extensions</code></a></li>
+</ul>
+</details>
+
+<details>
+<summary>CryptoKit Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/CryptoKit/DigestExtensions.swift"><code>Digest extensions</code></a></li>
 </ul>
 </details>
 
@@ -349,9 +365,9 @@ Documentation for all extensions, with examples, is available at [swifterswift.c
 We want your feedback.
 Please refer to [contributing guidelines](https://github.com/SwifterSwift/SwifterSwift/tree/master/CONTRIBUTING.md) before participating.
 
-## Slack Channel: [![Slack](https://slackin-ppvrggbpgn.now.sh/badge.svg)](https://slackin-ppvrggbpgn.now.sh/)
+## Slack Channel: [![Slack](https://img.shields.io/badge/Slack-SwifterSwift-green.svg)](https://swifterswift.slack.com)
 
-It is always nice to talk with other people using SwifterSwift and exchange experiences, so come [join our Slack channel](https://slackin-ppvrggbpgn.now.sh/).
+It is always nice to talk with other people using SwifterSwift and exchange experiences, so come [join our Slack channel](https://swifterswift.slack.com).
 
 ## Thanks
 
